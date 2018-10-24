@@ -68,9 +68,11 @@ void draw1() {
    background(0);
    
    shape (v, 0, 0);
-   colorMode(RGB);
-   fill((millis()-oldTime/150), 34, 47);
-   rect(160, 700, (millis()-oldTime)/53, 20);
+   
+   int in=(millis()-oldTime)/111;
+   
+   fill(in, in, in);
+   rect(160, 700, (millis()-oldTime)/53, 10, 5);
   if ((millis()-oldTime)>40000)
   {
 
